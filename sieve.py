@@ -12,7 +12,7 @@ def findPrimes():
     i=2
     while i<int(math.sqrt(max-1))+1 :
         if primes[i]:
-            for j in range(i*i,max,i):
+            for j in range(i+i,max,i):   #make jumps of from i+i of size i
                 primes[j]=0 
         
         i+=1
